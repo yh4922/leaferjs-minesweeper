@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>扫雷</title>
+</head>
+
+<body>
+  <div class="tools">
+    <table>
+      <tr>
+        <td>网格列</td>
+        <td>
+          <input id="grid_count" type="range" min="0" max="100" value="20" step="1" />
+          <span id="grid_count_value">20</span>
+        </td>
+        <td>地雷数量</td>
+        <td>
+          <input id="landmine_count" type="range" min="0" max="100" value="1" step="1" />
+          <span id="landmine_count_value">1</span>
+        </td>
+        <td align="center">
+          <button id="start_game">开始游戏</button>
+        </td>
+        <td align="center">
+          <button id="sound_btn">
+            <img id="sound_btn_image" src="/src/icon/open_sound.svg" />
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
